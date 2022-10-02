@@ -10,6 +10,6 @@ build: # Building an application
 publish: # Package publication
 	poetry publish --dry-run
 
-packkage-install: # Installing the package for the current user
+package-install: # Installing the package for the current user
 	python3 -m pip install --user dist/*.whl
 
