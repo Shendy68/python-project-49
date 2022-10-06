@@ -13,3 +13,5 @@ publish: # Package publication
 package-install: # Installing the package for the current user
 	python3 -m pip install --user dist/*.whl
 
+lint: # Start linter
+	poetry run flake8 brain_games
