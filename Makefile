@@ -16,8 +16,11 @@ package-install: # Installing the package for the current user
 lint: # Start linter
 	poetry run flake8 brain_games
 
-brain-even: # Start games
+brain-even: # Start games even numbers
 	poetry run brain-even
 
 package-install-f: # Force installing the package for the current user
 	python3 -m pip install --user --force-reinstall dist/*.whl
+
+brain-calc: # Start games calc
+	poetry run brain-calc
