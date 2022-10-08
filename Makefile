@@ -24,3 +24,6 @@ package-install-f: # Force installing the package for the current user
 
 brain-calc: # Start games calc
 	poetry run brain-calc
+
+brain-gcd: # Start games gcd numbers
+	poetry run brain-gcd
