@@ -14,8 +14,8 @@ def calc():
     oper = ['+', '-', '*']
     i = 1
     while i <= 3:
-        num_1 = randint(1, 99)
-        num_2 = randint(1, 99)
+        num_1 = randint(0, 99)
+        num_2 = randint(0, 99)
         rand_oper = choice(oper)
         question = eval(f'{num_1} {rand_oper} {num_2}')
         answer = prompt.string(f'Question: {num_1} {rand_oper} {num_2}\nYour answer: ')
