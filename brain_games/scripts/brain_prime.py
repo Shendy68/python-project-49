@@ -20,8 +20,8 @@ def prime_num():
             if num % div == 0:
                 quest = 'no'
                 break
-            else:
-                quest = 'yes'
+        else:
+            quest = 'yes'
         if str(quest) == ans:
             print('Correct!')
             if i == 3:
