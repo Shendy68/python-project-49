@@ -15,18 +15,19 @@ def even():
     while i <= 3:
         num = randint(0, 100)
         print(f'Question: {num}\nYour answer: ', end="")
-        answer = input()
-        if num % 2 == 0 and answer == 'yes' or num % 2 != 0 and answer == 'no':
+        ans = input()
+        if num % 2 == 0:
+            quest = 'yes'
+        else:
+            quest = 'no'
+        if str(quest) == ans:
             print('Correct!')
             if i == 3:
-                print(f'Congratulations, {name}!')
-            i += 1
-        elif num % 2 == 0 and answer != 'yes':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'yes'")
-            break
-        elif num % 2 != 0 and answer != 'no':
-            print(f"'{answer}' is wrong answer ;(. Correct answer was 'no'")
-            break
+                print(f'Congratulations, {name}')
+        else:
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{quest}'.")
+            print(f"Let's try again, {name}!")
+        i += 1
 
 
 def main():
