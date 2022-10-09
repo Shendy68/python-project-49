@@ -27,6 +27,7 @@ def even():
         else:
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{quest}'.")
             print(f"Let's try again, {name}!")
+            break
         i += 1
 
 
