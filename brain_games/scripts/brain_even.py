@@ -10,7 +10,7 @@ def welcome_user():
 
 
 def even():
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 1
     while i <= 3:
         num = randint(0, 100)
