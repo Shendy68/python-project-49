@@ -23,7 +23,7 @@ def even():
         if str(quest) == ans:
             print('Correct!')
             if i == 3:
-                print(f'Congratulations, {name}')
+                print(f'Congratulations, {name}!')
         else:
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{quest}'.")
             print(f"Let's try again, {name}!")
