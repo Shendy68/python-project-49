@@ -33,7 +33,7 @@ def prime_num():
 
 
 def main():
-    print('Welcom to the Brain Games!')
+    print('Welcome to the Brain Games!')
     welcome_user()
     prime_num()
 
