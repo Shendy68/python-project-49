@@ -36,7 +36,7 @@ def progression():
 
 
 def main():
-    print('Welcom to the Brain Games!')
+    print('Welcome to the Brain Games!')
     welcome_user()
     progression()
 
