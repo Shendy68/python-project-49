@@ -27,3 +27,6 @@ brain-calc: # Start games calc
 
 brain-gcd: # Start games gcd numbers
 	poetry run brain-gcd
+
+brain-progression: # Start games numbers progression
+	poetry run brain-progression
