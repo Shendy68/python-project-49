@@ -30,3 +30,6 @@ brain-gcd: # Start games gcd numbers
 
 brain-progression: # Start games numbers progression
 	poetry run brain-progression
+
+brain-prime: # Start games prime numbers
+	poetry run brain-prime
