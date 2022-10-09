@@ -16,19 +16,20 @@ def calc():
     while i <= 3:
         num_1 = randint(0, 99)
         num_2 = randint(0, 99)
-        rand_oper = choice(oper)
-        question = eval(f'{num_1} {rand_oper} {num_2}')
-        answer = prompt.string(f'Question: {num_1} {rand_oper} {num_2}\nYour answer: ')
-        if str(question) == answer:
+        r_oper = choice(oper)
+        quest = eval(f'{num_1} {r_oper} {num_2}')
+        print(f'Question: {num_1} {r_oper} {num_2}')
+        ans = prompt.string('Your answer: ')
+        if str(quest) == ans:
             print('Correct!')
             if i == 3:
                 print(f'Congratulations, {name}')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{question}'.")
+            print(f"'{ans}' is wrong answer ;(. Correct answer was '{quest}'.")
             print(f"Let's try again, {name}!")
             break
         i += 1
-        
+
 
 def main():
     print('Welcom to the Brain Games!')
@@ -38,6 +39,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
-
-    
